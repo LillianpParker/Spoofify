@@ -3,4 +3,9 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="greeting">Welcome to Spoofify</string>
+    <string name="instructions">Lets go ahead and get you logged in</string>
+    <string name="login"><u>Log In</u></string>
+    <string name="signup"><u>Sign Up</u></string>
+    <string name="note">Please note this application was made for testing only, as requested by Disrupted Labs</string>
 </resources>
