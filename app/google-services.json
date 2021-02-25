@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "909261284801",
+    "project_id": "spoofify-lp",
+    "storage_bucket": "spoofify-lp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909261284801:android:681a0ffcf42ef160ea3b40",
+        "android_client_info": {
+          "package_name": "com.example.spoofify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909261284801-gonjqlrp1fbrrq9ab1e83td8dqklavo0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG3erzHVPBCxJ6DrZyHFPX-cj0H59VHzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909261284801-gonjqlrp1fbrrq9ab1e83td8dqklavo0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
