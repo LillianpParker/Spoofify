@@ -9,20 +9,25 @@
     android:background="@drawable/gradient"
     tools:context=".MainActivity"
     >
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
-        android:background="#ff23729a"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        app:elevation="2dp"
+        app:itemBackground="@android:color/transparent"
+        app:itemIconSize="24dp"
+        android:textColor="@color/black"
+        app:menu="@menu/menu_bottom_navigation"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="673dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
     <TextView
-        android:id="@+id/text_home"
+        android:id="@+id/tvLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -42,7 +47,7 @@
         android:id="@+id/update_pass_btn"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:layout_marginBottom="272dp"
+        android:layout_marginBottom="20dp"
         android:text="@string/update_pass"
         app:layout_constraintBottom_toTopOf="@+id/logout_btn"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -85,5 +90,16 @@
 <!--        app:layout_constraintTop_toTopOf="parent"-->
 <!--        app:navGraph="@navigation/mobile_navigation" />-->
     <!-- End of necessary files-->
+<!--<com.google.android.material.bottomnavigation.BottomNavigationView&ndash;&gt;-->
+        <!--        android:id="@+id/nav_view"-->
+        <!--        android:layout_width="0dp"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginStart="0dp"-->
+        <!--        android:layout_marginEnd="0dp"-->
+        <!--        android:background="#ff23729a"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--        app:layout_constraintRight_toRightOf="parent"-->
+        <!--        app:menu="@menu/bottom_nav_menu" />-->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>

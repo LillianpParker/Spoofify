@@ -11,6 +11,7 @@ import com.google.firebase.auth.FirebaseAuth
 import android.content.Intent
 import android.widget.Button
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -48,23 +49,30 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, UpdatePassword::class.java)
             startActivity(intent)
         }
-
+        bottomNav.setOnNavigationItemSelectedListener {
+            when (it.itemId) {
+                R.id.menu_home -> {
+                    setContent("Home")
+                    true
+                }
+                R.id.menu_request -> {
+                    setContent("Request")
+                    true
+                }
+                R.id.menu_search -> {
+                    setContent("Search")
+                    true
+                }
+                R.id.menu_settings -> {
+                    setContent("Settings")
+                    true
+                }
+                else -> false
+            }
+        }
     }
-
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_main)
-//        val navView: BottomNavigationView = findViewById(R.id.nav_view)
-//
-//        val navController = findNavController(R.id.nav_host_fragment)
-//        // Passing each menu ID as a set of Ids because each
-//        // menu should be considered as top level destinations.
-//        val appBarConfiguration = AppBarConfiguration(setOf(
-//                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications))
-//        setupActionBarWithNavController(navController, appBarConfiguration)
-//        navView.setupWithNavController(navController)
-//        auth = FirebaseAuth.getInstance()
-//
-//    }
-
-}
+    private fun setContent(content: String) {
+        setTitle(content)
+        tvLabel.text = content
+    }
+    }
