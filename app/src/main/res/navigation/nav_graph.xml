@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginActivity">
+
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.spoofify.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" >
+        <action
+            android:id="@+id/action_loginActivity_to_forgotPasswordActivity"
+            app:destination="@id/forgotPasswordActivity" />
+        <action
+            android:id="@+id/action_loginActivity_to_mainActivity"
+            app:destination="@id/mainActivity" />
+        <action
+            android:id="@+id/action_loginActivity_to_signupActivity"
+            app:destination="@id/signupActivity" />
+    </activity>
+    <activity
+        android:id="@+id/forgotPasswordActivity"
+        android:name="com.example.spoofify.ForgotPasswordActivity"
+        android:label="activity_forgot_password"
+        tools:layout="@layout/activity_forgot_password" >
+        <action
+            android:id="@+id/action_forgotPasswordActivity_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </activity>
+    <activity
+        android:id="@+id/signupActivity"
+        android:name="com.example.spoofify.SignupActivity"
+        android:label="activity_signup"
+        tools:layout="@layout/activity_signup" >
+        <action
+            android:id="@+id/action_signupActivity_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </activity>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.spoofify.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" >
+        <action
+            android:id="@+id/action_mainActivity_to_requestFragment"
+            app:destination="@id/requestFragment" >
+            <action
+                android:id="@+id/action_action_mainActivity_to_requestFragment_to_settingsFragment"
+                app:destination="@id/settingsFragment" />
+        </action>
+        <action
+            android:id="@+id/action_mainActivity_to_placeholder"
+            app:destination="@id/placeholder" />
+        <action
+            android:id="@+id/action_mainActivity_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </activity>
+    <fragment
+        android:id="@+id/requestFragment"
+        android:name="com.example.spoofify.ui.RequestFragment"
+        android:label="menu_request_fragment"
+        tools:layout="@layout/menu_request_fragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.spoofify.ui.SettingsFragment"
+        android:label="menu_settings_fragment"
+        tools:layout="@layout/menu_settings_fragment" />
+    <fragment android:id="@+id/placeholder" />
+</navigation>

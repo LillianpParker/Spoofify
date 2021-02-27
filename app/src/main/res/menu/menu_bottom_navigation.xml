@@ -13,7 +13,7 @@
         android:title="Search"
         android:icon="@drawable/icon_search"
         />
-    <item android:id="@+id/menu_settings"
+    <item android:id="@+id/SettingsFragment"
         android:title="Settings"
         android:icon="@drawable/icon_settings"
         />

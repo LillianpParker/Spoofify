@@ -10,22 +10,7 @@
     tools:context=".MainActivity"
     >
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNav"
-        android:layout_width="match_parent"
-        android:layout_height="58dp"
-        android:layout_alignParentBottom="true"
-        app:elevation="2dp"
-        app:itemBackground="@android:color/transparent"
-        app:itemIconSize="24dp"
-        android:textColor="@color/black"
-        app:menu="@menu/menu_bottom_navigation"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="673dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-
+<!-- GREETING -->
     <TextView
         android:id="@+id/tvLabel"
         android:layout_width="match_parent"
@@ -36,32 +21,192 @@
         android:text="@string/home_greeting"
         android:textAlignment="center"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01" />
+        app:layout_constraintVertical_bias="0.0" />
 
-    <Button
-        android:id="@+id/update_pass_btn"
+<!-- DECORATIVE LINE-->
+    <RelativeLayout
+        android:id="@+id/greeting_layout"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginBottom="20dp"
-        android:text="@string/update_pass"
-        app:layout_constraintBottom_toTopOf="@+id/logout_btn"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLabel"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="39dp" >
 
-    <Button
-        android:id="@+id/logout_btn"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginBottom="260dp"
-        android:text="@string/logout"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:background="@color/black"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            tools:layout_editor_absoluteX="-8dp"
+            tools:layout_editor_absoluteY="289dp" />
+    </RelativeLayout>
+
+<!--FIRST IMAGE VIEW-->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Cat1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/greeting_layout" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView1"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="3dip"
+        android:scrollbars="horizontal">
+        <LinearLayout
+            android:id="@+id/linear_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+<!-- SECOND IMAGE VIEW -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Cat2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontalScrollView1" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="3dip"
+        android:scrollbars="horizontal">
+        <LinearLayout
+            android:id="@+id/linear_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+<!--    THIRD IMAGE VIEW -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Cat3"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontalScrollView2" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView3"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="3dip"
+        android:scrollbars="horizontal">
+        <LinearLayout
+            android:id="@+id/linear_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+<!-- FOURTH IMAGE VIEW -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/Cat4"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontalScrollView3" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView4"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="3dip"
+        android:scrollbars="horizontal">
+        <LinearLayout
+            android:id="@+id/linear_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </HorizontalScrollView>
+
+<!--DOWNLOAD NOTICE -->
+    <TextView
+        android:id="@+id/download_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/download_notice"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <!--NAV BAR-->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        app:elevation="2dp"
+        app:itemBackground="@color/startColor"
+        app:itemIconSize="27dp"
+        android:textColor="@color/black"
+        app:menu="@menu/menu_bottom_navigation"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="673dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+
+    <!--    <androidx.fragment.app.FragmentContainerView-->
+<!--        android:id="@+id/nav_host_fragment"-->
+<!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:defaultNavHost="true"-->
+<!--        app:navGraph="@navigation/nav_graph" />-->
 
 
     <!-- Start of necessary files -->
@@ -84,11 +229,10 @@
 <!--        android:layout_height="match_parent"-->
 <!--        android:background="@android:color/transparent"-->
 <!--        app:defaultNavHost="true"-->
-<!--        app:layout_constraintBottom_toTopOf="@id/nav_view"-->
 <!--        app:layout_constraintLeft_toLeftOf="parent"-->
 <!--        app:layout_constraintRight_toRightOf="parent"-->
 <!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:navGraph="@navigation/mobile_navigation" />-->
+<!--        app:navGraph="@navigation/nav_graph" />-->
     <!-- End of necessary files-->
 <!--<com.google.android.material.bottomnavigation.BottomNavigationView&ndash;&gt;-->
         <!--        android:id="@+id/nav_view"-->

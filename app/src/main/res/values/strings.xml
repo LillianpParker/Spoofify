@@ -23,4 +23,10 @@
     <!-- Twitter and secret -->
     <string name="twitter_consumer_key" translatable="false">YOUR_CONSUMER_KEY</string>
     <string name="twitter_consumer_secret" translatable="false">YOUR_CONSUMER_SECRET</string>
+    <string name="request_statement">Cant seem to find the song youre looking for?<br/><br/>Then go ahead and shoot us a message and well make sure to look into it.</string>
+    <string name="Cat1">Most Popular</string>
+    <string name="Cat2">Top Soundtrack</string>
+    <string name="Cat3">Top Rock and Roll</string>
+    <string name="Cat4">Top Country</string>
+    <string name="download_notice">Tap on each album to download a short (free!) ringtone</string>
 </resources>
