@@ -29,4 +29,10 @@
     <string name="Cat3">Top Rock and Roll</string>
     <string name="Cat4">Top Country</string>
     <string name="download_notice">Tap on each album to download a short (free!) ringtone</string>
+    <string name="settings_greeting">Welcome to your settings, you can change some important things here</string>
+    <string name="search_statement">Go ahead and take a look for your favorite songs here</string>
+    <string name="search_notice">If you are unable to find a song, then head on over to the request tab and submit a request for us to add it to our ever growing library</string>
+    <string name="search_text">Search here</string>
+    <string name="request_button">Submit my request</string>
+    <string name="send_btn">Click here to search!</string>
 </resources>

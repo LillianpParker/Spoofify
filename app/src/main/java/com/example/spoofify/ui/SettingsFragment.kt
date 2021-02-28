@@ -28,7 +28,7 @@ class SettingsFragment : Fragment() {
     ): View? {
         settingsViewModel =
             ViewModelProvider(this).get(SettingsViewModel::class.java)
-        val root = inflater.inflate(R.layout.menu_settings_fragment, container, true)
+        val root = inflater.inflate(R.layout.menu_settings_fragment, container, false)
 
         logoutBtn = root.findViewById(R.id.logout_btn)
         updatePass = root.findViewById(R.id.update_pass_btn)
