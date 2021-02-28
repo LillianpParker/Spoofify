@@ -35,6 +35,7 @@ class SettingsFragment : Fragment() {
 
         logoutBtn.setOnClickListener{
             FirebaseAuth.getInstance().signOut()
+            startActivity(Intent(activity, LoginActivity::class.java))
         }
 
         updatePass.setOnClickListener{
