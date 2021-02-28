@@ -9,23 +9,27 @@
         android:id="@+id/menu_home"
         android:name="com.example.spoofify.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home"
+        android:color="@color/textColor"/>
 
     <fragment
         android:id="@+id/menu_request"
         android:name="com.example.spoofify.ui.RequestFragment"
         android:label="Request"
-        tools:layout="@layout/menu_request_fragment" />
+        tools:layout="@layout/menu_request_fragment"
+        android:color="@color/textColor"/>
 
     <fragment
         android:id="@+id/menu_search"
         android:name="com.example.spoofify.ui.SearchFragment"
         android:label="Search"
-        tools:layout="@layout/menu_search_fragment" />
+        tools:layout="@layout/menu_search_fragment"
+        android:color="@color/textColor"/>
 
     <fragment
         android:id="@+id/menu_settings"
         android:name="com.example.spoofify.ui.SettingsFragment"
         android:label="Settings"
-        tools:layout="@layout/menu_settings_fragment" />
+        tools:layout="@layout/menu_settings_fragment"
+        android:color="@color/textColor"/>
 </navigation>
